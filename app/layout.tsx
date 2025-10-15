@@ -5,6 +5,8 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
+import ThemeToggleFAB from "@/components/site/theme-toggle-fab"
 
 export const metadata: Metadata = {
   title: "Orangepoint Software — Web & Mobile Development",
@@ -19,9 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* Ensure the .dark class toggles on the html element via attribute="class" */}
       <body className={`font-sans antialiased ${GeistSans.variable} ${GeistMono.variable}`}>
-        <Suspense fallback={null}>{children}</Suspense>
-        <Analytics />
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Suspense fallback={null}>{children}</Suspense>
+          <Analytics />
+          {/* Floating toggle in bottom-right on every page */}
+          <ThemeToggleFAB />
+        </ThemeProvider>
       </body>
     </html>
   )
