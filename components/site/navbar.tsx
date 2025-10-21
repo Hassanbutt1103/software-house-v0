@@ -8,7 +8,7 @@ export function Navbar() {
     <>
       <div aria-hidden="true" />
       <header className="w-full border-b border-border bg-background">
-        <nav className="mx-auto flex items-stretch justify-between px-4 py-0 h-16">
+        <nav className="mx-auto flex items-stretch justify-between px-4 py-0 h-14">
 
           <Link href="/" className="flex items-center gap-2" aria-label="Orangepoint Software home">
             <div className="h-6 w-6 rounded-sm bg-primary" aria-hidden="true" />

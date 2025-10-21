@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 export function Hero() {
   return (
     <section className="bg-background">
-      <div className="mx-auto px-4 py-16 md:py-20">
+      <div className="mx-auto px-4 py-16">
         <div className="max-w-3xl">
           <span className="inline-flex items-center  bg-primary px-3 py-1 text-lg font-medium text-primary-foreground">
             Software House
