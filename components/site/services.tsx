@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 export function Services() {
   return (
     <section id="services" className="border-t border-border bg-background">
-      <div className="mx-auto max-w-6xl px-4 py-16">
+      <div className="mx-auto px-4 py-16">
         <header className="mb-8 max-w-2xl">
           <h2 className="text-balance text-3xl font-semibold md:text-4xl">Our services</h2>
           <div className="mt-2 h-1 w-16 rounded-full bg-primary" aria-hidden="true" />
@@ -13,7 +13,7 @@ export function Services() {
         </header>
 
         <div className="grid gap-6 md:grid-cols-2">
-          <Card className="border border-border">
+          <Card className="border border-border rounded-none shadow-none">
             <CardHeader className="border-b-2 border-primary">
               <CardTitle className="text-xl">Web Development</CardTitle>
             </CardHeader>
@@ -26,7 +26,7 @@ export function Services() {
             </CardContent>
           </Card>
 
-          <Card className="border border-border">
+          <Card className=" rounded-none  shadow-none">
             <CardHeader className="border-b-2 border-primary">
               <CardTitle className="text-xl">Mobile App Development</CardTitle>
             </CardHeader>
