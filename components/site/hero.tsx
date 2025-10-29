@@ -14,7 +14,7 @@ export function Hero() {
   
   <div className="absolute inset-0 flex flex-col justify-center items-start px-10 space-y-15 bg-black/50">
     <h1 className="text-7xl font-bold text-white tracking-tight">
-      We build fast, reliable <span className="text-primary">web</span> and{" "}
+      We build fast, reliable <br /> <span className="text-primary">web</span> and{" "}
       <span className="text-primary">mobile</span> apps
     </h1>
     <p className="mt-4 text-lg text-gray-200 max-w-2xl">
