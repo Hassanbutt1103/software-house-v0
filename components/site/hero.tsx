@@ -21,7 +21,7 @@ export function Hero() {
       From landing pages to complex platforms, we design and ship products that scale.
     </p>
     <div className="mt-6 flex items-center gap-3">
-      <button className=" shadow-none backdrop-blur-sm text-white border-white px-5 py-4 font-bold text-xl rounded-sm">
+      <button className="shadow-none backdrop-blur-sm bg-white/20 text-white border  px-5 py-4 font-bold text-xl rounded-sm">
         <a href="#services">GET IN TOUCH</a>
       </button>
     </div>
