@@ -24,7 +24,7 @@ export default function ServiceHeading() {
 
   // 📌 Opacity: scroll start hone par text fade in hota hai
 //   const opacity = useTransform(scrollYProgress, [0, 0.1, 0.1], [0, 1, 1]);
-
+// 
   // 📌 Y-axis position: text thoda neeche se upar aata hai
   const y = useTransform(scrollYProgress, [0, 0.1, 0.2], [50, 0, 0]);
 
