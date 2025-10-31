@@ -20,7 +20,7 @@ export default function ServiceHeading() {
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.8, 0.8]);
 
   // 📌 X-axis movement: text scroll hone par left side move hota hai
-  const x = useTransform(scrollYProgress, [0, 0.5, 1], ["0%", "-100%", "-100%"]);
+  const x = useTransform(scrollYProgress, [0, 0.5, 1], ["0%", "-90%", "-90%"]);
 
   // 📌 Opacity: scroll start hone par text fade in hota hai
 //   const opacity = useTransform(scrollYProgress, [0, 0.1, 0.1], [0, 1, 1]);
