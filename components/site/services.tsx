@@ -1,15 +1,18 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import ServiceHeading from "@/components/ServiceHeading"
+
 
 export function Services() {
   return (
     <div>
+      <ServiceHeading />
       <section id="services" className="border-t border-border bg-background px-4 md:px-16">
       <div className="mx-auto px-4 py-16">
 
         {/* Desktop Header */}
         <header className="hidden md:block mb-8 max-w-2xl">
           <h2 className="text-balance text-3xl font-semibold md:text-4xl">
-            Custom Web and Mobile Development Services <br /> to Broaden
+            Web and Mobile Development Services <br /> to Broaden
           </h2>
           <div className="mt-2 h-1 w-24 rounded-full bg-primary" aria-hidden="true" />
           <p className="mt-3 text-pretty text-muted-foreground leading-relaxed">
@@ -20,7 +23,7 @@ export function Services() {
         {/* Mobile Header */}
         <header className="md:hidden mb-6 max-w-full text-left ">
           <h2 className="text-balance text-2xl font-semibold">
-            Custom Mobile & Web Services
+            Mobile & Web Services
           </h2>
           <div className="mt-2 h-1 w-20 rounded-full bg-primary" aria-hidden="true" />
           <p className="mt-2 text-pretty text-muted-foreground leading-relaxed">

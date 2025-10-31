@@ -24,7 +24,7 @@ export function Hero() {
 
       {/* ✅ Desktop View */}
       <div className="absolute inset-0 hidden md:flex flex-col justify-center items-start px-16 space-y-10 bg-black/50">
-        <h1 className="text-7xl font-bold text-white tracking-tight">
+        <h1 className="text-7xl inter-regular font-bold text-white tracking-tight">
           We build fast, reliable <br />
           <span className="text-primary">web</span> and{" "}
           <span className="text-primary">mobile</span> apps

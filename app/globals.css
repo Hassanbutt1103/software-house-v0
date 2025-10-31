@@ -2,10 +2,14 @@
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root {
   --background: oklch(1 0 0); /* white */
   --foreground: oklch(0.18 0 0); /* near-black gray for text */
+
+  /* Font */
+  --font-sans: 'Pacifico', cursive;
+  --font-mono: var(--font-geist-mono);
 
   /* Brand */
   --primary: oklch(0.75 0.16 50); /* vivid orange */
@@ -126,6 +130,12 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 }
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* normal */
+  font-style: normal;
+}
 
 @layer base {
   * {
@@ -133,6 +143,7 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
   }
 }
 
