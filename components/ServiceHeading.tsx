@@ -30,7 +30,7 @@ export default function ServiceHeading() {
 
   // 🔹 MOBILE ANIMATION SETUP
   // Ye animations mobile devices ke liye optimize kiye gaye hain
-  
+//   
   // 📌 Mobile scale: text thoda kam shrink hota hai
 
   return (
