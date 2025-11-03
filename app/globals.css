@@ -172,3 +172,17 @@
   scrollbar-width: thin;
   scrollbar-color: #4a4a4a #1a1a1a;
 }
+
+/* Animated Gradient */
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 3s ease infinite;
+}

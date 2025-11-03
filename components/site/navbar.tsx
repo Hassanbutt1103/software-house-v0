@@ -28,7 +28,7 @@ export function Navbar() {
       }`}
     >
       {/* ✅ Desktop Navbar */}
-      <nav className="hidden md:flex mx-auto items-center justify-between px-8 h-14">
+      <nav className="hidden md:flex mx-auto items-center justify-between px-4 md:px-16 h-14">
         <div className="flex items-center gap-18">
           <Link href="/" className="flex items-center gap-2">
             <span className="font-semibold text-xl text-white">Personal Software</span>
@@ -63,7 +63,7 @@ export function Navbar() {
       </nav>
 
       {/* ✅ Mobile Navbar */}
-      <nav className="md:hidden flex items-center justify-between px-6 h-14 text-white">
+      <nav className="md:hidden flex items-center justify-between px-4 h-14 text-white">
         <div className="flex items-center gap-2">
           <span className="font-semibold text-lg">Personal Software</span>
         </div>
@@ -83,7 +83,7 @@ export function Navbar() {
 
       {/* ✅ Mobile Menu Dropdown */}
       {menuOpen && (
-        <div className="md:hidden flex flex-col bg-black/90 text-white px-6 py-4 space-y-3">
+        <div className="md:hidden flex flex-col bg-black/90 text-white px-4 py-4 space-y-3">
           <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
           <a href="#insight" onClick={() => setMenuOpen(false)}>Insight</a>
           <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
