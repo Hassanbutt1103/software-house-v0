@@ -34,6 +34,7 @@ const aboutData: AboutCategory[] = [
       },
     ],
   },
+  // ok
   {
     category: "Impact & Network",
     items: [
