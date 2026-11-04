@@ -6,7 +6,9 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
-import ThemeToggleFAB from "@/components/site/theme-toggle-fab"
+// import ThemeToggleFAB from "@/components/site/theme-toggle-fab"
+import { Navbar } from "@/components/site/navbar"
+import { Footer } from "@/components/site/footer"
 
 export const metadata: Metadata = {
   title: "Orangepoint Software — Web & Mobile Development",
@@ -21,15 +23,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <Navbar />
       {/* Ensure the .dark class toggles on the html element via attribute="class" */}
       <body className={`font-sans antialiased ${GeistSans.variable} ${GeistMono.variable}`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Suspense fallback={null}>{children}</Suspense>
           <Analytics />
           {/* Floating toggle in bottom-right on every page */}
-          <ThemeToggleFAB />
+          {/* <ThemeToggleFAB /> */}
         </ThemeProvider>
       </body>
+      <Footer />
     </html>
   )
 }
