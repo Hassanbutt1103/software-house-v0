@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model ProjectInquiry {
+  id               String   @id @default(cuid())
+  name             String
+  email            String
+  company          String?  // اختیاری (Optional)
+  budget           String   @default("$1k - $5k")
+  selectedServices String[] // Multiple selected services Array
+  message          String
+  status           String   @default("PENDING") // PENDING, CONTACTED, ARCHIVED
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  @@map("project_inquiries")
+}

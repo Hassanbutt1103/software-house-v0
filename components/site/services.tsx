@@ -116,7 +116,7 @@ export function Services() {
           {/* Free Consultancy Button */}
           <div className="mt-12 text-left">
             <motion.a
-              href="#contact"
+              href="/contact-us"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white font-semibold px-6 py-3 rounded-xl shadow-lg hover:opacity-90 transition-all"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
