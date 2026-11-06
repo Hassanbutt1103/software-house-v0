@@ -30,6 +30,11 @@ export const servicesData: MenuCategory[] = [
         href: "/services/Digital-services/mobileApps",
       },
       {
+        title: "Backend Development",
+        description: "Robust RESTful APIs, databases, and server-side architecture.",
+        href: "/services/Digital-services/backend",
+      },
+      {
         title: "UI/UX Design",
         description: "User-centered design that creates intuitive experiences.",
         href: "/services/Digital-services/ui-ux",
