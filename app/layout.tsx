@@ -52,9 +52,8 @@ import { Navbar } from "@/components/site/navbar"
 import { Footer } from "@/components/site/footer"
 
 export const metadata: Metadata = {
-  title: "Orangepoint Software — Web & Mobile Development",
+  title: "OrangeDev Software — Web & Mobile Development",
   description: "We build fast, reliable web and mobile applications using modern stacks.",
-  generator: "v0.app",
 }
 
 export default function RootLayout({
