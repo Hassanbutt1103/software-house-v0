@@ -1,12 +1,11 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export function Hero() {
   return (
     <section className="relative bg-background">
-
+      {/* Desktop Video */}
       <video
         src="/frontpageVID/home.mp4"
         autoPlay
@@ -63,9 +62,12 @@ export function Hero() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.35, delay: 0.2 }}
         >
-          <button className="shadow-none backdrop-blur-sm bg-white/20 text-white px-5 py-4 font-bold text-xl rounded-sm">
-            <a href="#services">GET IN TOUCH</a>
-          </button>
+          <a
+            href="#services"
+            className="inline-block cursor-pointer shadow-none backdrop-blur-sm bg-white/20 text-white px-5 py-4 font-bold text-xl rounded-sm hover:bg-white/30 hover:scale-105 transition-all duration-300"
+          >
+            GET IN TOUCH
+          </a>
         </motion.div>
       </motion.div>
 
@@ -105,12 +107,14 @@ export function Hero() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.35, delay: 0.2 }}
         >
-          <button className="shadow-none backdrop-blur-sm bg-white/20 text-white px-4 py-3 font-semibold rounded-sm">
-            <a href="#services">GET IN TOUCH</a>
-          </button>
+          <a
+            href="#services"
+            className="inline-block cursor-pointer shadow-none backdrop-blur-sm bg-white/20 text-white px-4 py-3 font-semibold rounded-sm hover:bg-white/30 transition-all duration-300"
+          >
+            GET IN TOUCH
+          </a>
         </motion.div>
       </motion.div>
-
     </section>
   );
 }
