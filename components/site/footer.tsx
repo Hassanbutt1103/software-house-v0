@@ -1,7 +1,8 @@
-"use client";
+"use client"
 
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaGithub, FaMapMarkerAlt, FaEnvelope, FaPhone, FaClock } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -18,7 +19,18 @@ export function Footer() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5 }}
           >
-            <h2 className="text-2xl font-bold text-primary mb-4">Orangepoint Software</h2>
+            {/* Logo Image */}
+            <div className="mb-4">
+              <Image
+                src="/logo.png"
+                alt="OrangeDev Logo"
+                width={160}
+                height={40}
+                className="h-8 w-auto object-contain"
+                priority
+              />
+            </div>
+            
             <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
               We build modern web and mobile applications tailored to your business needs. Delivering quality and performance.
             </p>
@@ -89,7 +101,6 @@ export function Footer() {
               <li><a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Web Development</a></li>
               <li><a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Mobile Apps</a></li>
               <li><a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">UI/UX Design</a></li>
-              <li><a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">AI Website Fix</a></li>
               <li><a href="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Consultancy</a></li>
             </ul>
           </motion.div>
@@ -105,15 +116,15 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <FaEnvelope className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                <a href="mailto:info@codexnav.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">info@codexnav.com</a>
+                <a href="mailto:1103butt@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">1103butt@gmail.com</a>
               </li>
               <li className="flex items-start gap-3">
                 <FaPhone className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                <a href="tel:+1234567890" className="text-sm text-muted-foreground hover:text-primary transition-colors">+1 234 567 890</a>
+                <a href="tel:+923124527067" className="text-sm text-muted-foreground hover:text-primary transition-colors">+923124527067</a>
               </li>
               <li className="flex items-start gap-3">
                 <FaMapMarkerAlt className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
-                <span className="text-sm text-muted-foreground">San Francisco, CA</span>
+                <span className="text-sm text-muted-foreground">Lahore, Pakistan</span>
               </li>
               <li className="flex items-start gap-3">
                 <FaClock className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
@@ -135,11 +146,11 @@ export function Footer() {
       >
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Orangepoint Software. All rights reserved.
+            © {new Date().getFullYear()} OrangeDev. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
+            <a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a>
+            <a href="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</a>
           </div>
         </div>
       </motion.div>

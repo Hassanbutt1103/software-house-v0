@@ -84,7 +84,7 @@ export default function ValuesAndEthicsPage() {
 
           <div className="mt-8 flex justify-center">
             <Link
-              href="#contact"
+              href="/contact-us"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg hover:opacity-90 transition-all"
             >
               Partner With Us <ArrowRight className="w-4 h-4" />
