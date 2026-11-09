@@ -136,7 +136,7 @@ export function Navbar() {
     alt="OrangeDev Logo"
     width={160}
     height={50}
-    className="h-8 w-auto object-contain scale-125 origin-left"
+    className="h-4 w-auto object-contain scale-125 origin-left"
     priority
   />
 </Link>

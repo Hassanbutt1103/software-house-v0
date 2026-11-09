@@ -99,7 +99,7 @@ export function CtaContact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Direct Inquiries</p>
-                  <p className="font-semibold text-base">info@codexnav.com</p>
+                  <p className="font-semibold text-base">1103butt@gmail.com</p>
                 </div>
               </div>
 
