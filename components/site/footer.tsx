@@ -38,7 +38,8 @@ export function Footer() {
             {/* Social Icons */}
             <div className="flex items-center gap-4 mt-6">
               <motion.a 
-                href="#" 
+                href="https://www.linkedin.com/company/orange-dev/?viewAsMember=true" 
+                target="_blank"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary hover:text-white transition-all duration-300 text-muted-foreground"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
@@ -46,23 +47,26 @@ export function Footer() {
                 <FaLinkedinIn className="w-4 h-4" />
               </motion.a>
               <motion.a 
-                href="#" 
+                href="https://github.com/Hassanbutt1103" 
+                target="_blank"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary hover:text-white transition-all duration-300 text-muted-foreground"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaGithub className="w-4 h-4" />
               </motion.a>
-              <motion.a 
+              {/* <motion.a 
                 href="#" 
+                target="_blank"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary hover:text-white transition-all duration-300 text-muted-foreground"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <FaTwitter className="w-4 h-4" />
-              </motion.a>
+              </motion.a> */}
               <motion.a 
-                href="#" 
+                href="https://www.instagram.com/official_developer_110311" 
+                target="_blank"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-muted hover:bg-primary hover:text-white transition-all duration-300 text-muted-foreground"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
@@ -81,11 +85,11 @@ export function Footer() {
           >
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-3">
-              <li><a href="#hero" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Home</a></li>
+              <li><a href="/" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Home</a></li>
               <li><a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Services</a></li>
-              <li><a href="#portfolio" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Portfolio</a></li>
-              <li><a href="#about" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">About Us</a></li>
-              <li><a href="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Contact</a></li>
+              {/* <li><a href="#portfolio" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Portfolio</a></li> */}
+              <li><a href="/about/Company&Culture/our-story" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">About Us</a></li>
+              <li><a href="/contact-us" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Contact</a></li>
             </ul>
           </motion.div>
 
@@ -98,10 +102,10 @@ export function Footer() {
           >
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul className="space-y-3">
-              <li><a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Web Development</a></li>
-              <li><a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Mobile Apps</a></li>
-              <li><a href="#services" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">UI/UX Design</a></li>
-              <li><a href="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Consultancy</a></li>
+              <li><a href="/services/Digital-services/webDev" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Web Development</a></li>
+              <li><a href="/services/Digital-services/mobileApps" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Mobile Apps</a></li>
+              <li><a href="/services/Digital-services/ui-ux" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">UI/UX Design</a></li>
+              <li><a href="/contact-uc" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-block">Consultancy</a></li>
             </ul>
           </motion.div>
 
